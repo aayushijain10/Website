@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login or Register</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<nav id="sidenav">
+		<ul>
+			<li><a href="../jwala%20tour%20and%20travels/index.html">Home</a></li>
+			<li><a href="../jwala%20tour%20and%20travels/about.html">About us</a></li>
+			<li><a href="../jwala%20tour%20and%20travels/contact.html">Contact us</a></li>
+			<li><a href="../jwala%20tour%20and%20travels/car.html">Car rental</a></li>
+			<li><a href="../jwala%20tour%20and%20travels/login.html">Login</a></li>
+		</ul>
+	</nav>
+	<img src="image/menu.png" id="menuBtn">
+
+<div class="login-page">
+	<div class="form">
+		<form class="register-form">
+			<input type="text" placeholder="User Name"/>
+			<input type="password" placeholder="Password"/>
+			<input type="email" placeholder="email id"/>
+			<button>Create</button>
+			<p class="message">Already Registered? <a href="#">Login</a></p>
+		</form>
+	<form class="login-form">
+		<input type="text" placeholder="User Name">
+		<input type="password" placeholder="Password">
+		<button>Login</button>
+		<p class="message">Not Registered? <a href="#">Register</a></p>
+	</form>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+<footer>
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+					<h3>Jwala Tour and Travels</h3>
+					<p>Facilis ipsum reprehenderit nemo molestias.</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+					<ul>
+						<li><a href="#">Homes</a></li>
+						<li><a href="#">Hotels</a></li>
+						<li><a href="#">Car rent</a></li>
+						<li><a href="#">Flights</a></li>
+						<li><a href="#">Resorts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+					<h2>Follow Us</h2>
+					<p>Please Follow us on our Social Media Profile in orderto Keep Updated.</p>
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-pinterest"></i></a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+					<h2>Contact us</h2>
+					<p>D7/350,Rohini Sector-6,
+Ground Floor, new Delhi-110085</p>
+<p>011-40159926</p>
+<p>jwalatravels@gmail..com</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidenav = document.getElementById("sidenav");
+
+		sidenav.style.right = "-250px";
+		menuBtn.onclick = function(){
+			if(sidenav.style.right == "-250px"){
+				sidenav.style.right = "0";
+			}
+			else{
+				sidenav.style.right = "-250px";
+			}
+		}
+
+		var scroll = new SmoothScroll('a[href*="#"]');
+	
+	</script>
+
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+	</script>
+
+	<script>
+		$('.message a').click(function(){
+		$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+
+</body>
+</html>
